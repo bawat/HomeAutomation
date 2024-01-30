@@ -1,0 +1,70 @@
+OK; To start with you will need trydrv.exe Window version - Get it at: http://www.usbuirt.com/api_example_code.zip  :o
+
+It's in folder api_example_code/trydrvvb1_1_0  :o
+
+This program will let you capture IR codes and Send them.  :D
+
+Start by capturing a IR code and Cut and Paste it to a Word pad .txt file, do this with all your IR codes.
+
+In the format:  :-
+
+Record 0000 0070 0000 001A 0080 0080 0020 0020 0020 0020 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0060 0020 0020 0020 0060 0020 0060 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0020 0020 0060 0020 04EA
+
+Stop 0000 0070 0000 001A 0080 0080 0020 0020 0020 0020 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0020 0020 0060 0020 0060 0020 0060 0020 0020 0020 0060 0020 0060 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0060 0020 0020 0020 0020 0020 0020 0020 0060 0020 04E8
+
+Play 0000 0071 0000 001A 0080 0080 0020 0020 0020 0020 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0020 0020 0060 0020 0060 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0060 0020 04E8
+
+and so-on..................
+
+I have all mine in a file called Pronto.txt  :D
+
+Place this file into a folder called 'Uutx'  ;)
+
+Next, you will need a file called uutx.exe it's a command line driver  :-*
+
+Get it at: http://www.usbuirt.com/uutx_0_3.zip
+
+Then place it into the folder Uutx
+
+Using NotePad create batch files for your Macros  :'(
+
+the batch file will look like this:
+
+uutx -r3 -fPronto.txt Record  :D
+
+or this example
+
+ChDir C:Documents and SettingsOwnerDesktopUutx
+uutx -r3 -fPronto.txt Stop
+
+Where my file is called Pronto.txt
+
+-r3 makes it repeat 3 times.
+
+Other command line switches
+
+'uutx [-r<repeatCount> ] [-d<deviceNumber> ] [-s<sleepms>]  <"ProntoCodeString">
+
+'-or-
+
+'uutx [-r<repeatCount> ] [-d<deviceNumber> ] [-s<sleepms>] -f<fileName> <IRCodeName>
+
+
+Call this batch file from your macro !
+
+
+Your batch file may also look like:
+
+uutx "0000 0070 0000 001A 0080 0080 0020 0020 0020 0020 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0060 0020 0020 0020 0060 0020 0060 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0060 0020 0020 0020 0020 0020 0060 0020 04EA"
+
+Where this is my Record code.
+
+I have tested this and it works perfect!
+
+
+Next, I will show you how to Call this from a Basic 5 Express file like X10-Talk in SDK section.
+
+
+This will get you started!
+
+                     Have FUN :) ;) :D
