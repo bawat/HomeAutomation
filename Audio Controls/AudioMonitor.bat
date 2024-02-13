@@ -1,0 +1,1 @@
+nircmd setdefaultsounddevice "XV272U X" 1

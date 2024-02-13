@@ -1,0 +1,1 @@
+nircmd setdefaultsounddevice "Realtek Digital Output" 1
