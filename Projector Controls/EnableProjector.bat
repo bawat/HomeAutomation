@@ -10,5 +10,7 @@ uutx.exe -fProjectorCodes.txt DownButton
 uutx.exe -fProjectorCodes.txt RightButton
 uutx.exe -fProjectorCodes.txt SelectButton
 cd "../.."
+svcl.exe /SaveProfile "Profile1.spr"
 nircmd setdefaultsounddevice "Transmitter" 1
 :: nircmd setdefaultsounddevice "MStar Demo" 1
+svcl.exe /SetVolume AllAppVolume 0
