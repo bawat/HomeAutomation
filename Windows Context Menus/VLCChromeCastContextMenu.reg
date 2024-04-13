@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shell\Chromecast]
+"Icon"="E:\\Important Keep\\Stream Deck\\Windows Context Menus\\Chromecast_cast_button_icon.ico"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shell\Chromecast\command]
+@="\"E:\\Important Keep\\Stream Deck\\Windows Context Menus\\VLCProjectorOnAndChromeCast.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shell\Chromecast]
+"Icon"="E:\\Important Keep\\Stream Deck\\Windows Context Menus\\Chromecast_cast_button_icon.ico"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shell\Chromecast\command]
+@="\"E:\\Important Keep\\Stream Deck\\Windows Context Menus\\VLCProjectorOnAndChromeCast.bat\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avi\shell\Chromecast]
+"Icon"="E:\\Important Keep\\Stream Deck\\Windows Context Menus\\Chromecast_cast_button_icon.ico"
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avi\shell\Chromecast\command]
+@="\"E:\\Important Keep\\Stream Deck\\Windows Context Menus\\VLCProjectorOnAndChromeCast.bat\" \"%1\""
+
